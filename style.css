@@ -61,12 +61,27 @@ body {
 
 
 
-/*EXTRA*/ /*
+/*EXTRA*/
 .product:hover {
-    visibility: hidden;
+    opacity: 0.4;
+    transition-duration: 0.5s;
 }
+
+/* poichè heart è dopo product, uso TILDE, è un generic parent,
+non (per forza) IMMEDIATAMENTE dopo product
+*/
+.product:hover ~ .heart {
+    visibility: visible;
+    transition-duration: 1.2s;
+}
+
+
 
 .heart {
     position: absolute;
     z-index: 5;
+    right: 50%;
+    bottom: 5px;
+    color: red;
+    visibility: hidden;
 }
