@@ -12,19 +12,53 @@ body {
     
     margin-top: 50px;
     margin-bottom: 25px;
-    /*display flex non lo facciamo, ma sembra interessante*/ 
+    /*display flex non lo studiamo, ma sembra interessante*/ 
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /*space-evenly/around/between*/
     /*scherzavo, mai più. documentazione: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 }
 
 .product {
     height: 100%;
     display: inline-block;
-    margin: 0px 8px;    
+    /*margine minimo tra elementi, quando non spaziati dal flexbox*/
+    margin: 0px 3px;
+    }
+
+    /*---------discount tag-----------*/
+.discount {
+    height: 20px;
+    width: auto;
+}
+
+.product > .discount {
+    position: absolute;
+    z-index: 4;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.trenta {
+    background-color: green;
+}
+
+.cinque {
+    background-color: red;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*EXTRA*/ /*
 .product:hover {
     visibility: hidden;
 }
