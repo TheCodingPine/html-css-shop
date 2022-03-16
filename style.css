@@ -1,0 +1,17 @@
+* {box-sizing: border-box;}
+
+body {
+    background-color: white;
+}
+
+.container {
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.product {
+    height: 100%
+}
