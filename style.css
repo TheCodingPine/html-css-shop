@@ -5,11 +5,11 @@ body {
 }
 
 .container {
-    background-color: black; /*indicativo come riferimento*/
+    /*background-color: black; ///indicativo come riferimento*/
     /*centratura dinamica*/
     width: 60%;
     margin: auto;
-    
+    /*margini*/
     margin-top: 50px;
     margin-bottom: 25px;
     /*display flex non lo studiamo, ma sembra interessante*/ 
@@ -26,16 +26,18 @@ body {
     }
 
     /*---------discount tag-----------*/
-.discount {
+
+.layerer { /*contenitore per immagine e discount*/
+        position: relative;
+    }
+
+.discount { /*badge neutro degli sconti*/
     height: 20px;
     width: auto;
-}
-
-.product > .discount {
     position: absolute;
     z-index: 4;
-    margin-right: 0px;
-    margin-top: 0px;
+    top: 0px;
+    right: 0px;
 }
 
 .trenta {
@@ -45,6 +47,7 @@ body {
 .cinque {
     background-color: red;
 }
+
 
 
 
